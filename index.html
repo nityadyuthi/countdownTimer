@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display:ital,wght@1,900&display=swap"
+        rel="stylesheet">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Countdown Timer</title>
+</head>
+
+<body>
+    <h1>Countdown Timer</h1>
+    <h3>Enter time to count down in seconds.</h3>
+
+
+    <div class="inputs">
+        <input type="number" class="sec-input" placeholder="Seconds" name="seconds" value="" id="seconds" />
+        <span onclick="start()" class="input-button">Go!</span>
+    </div>
+ <div class="outputs">
+    <input type="number" class="sec-input" name="seconds" value="" id="timer" />
+    <p id="over" class="text" style="display: none;"></p>
+ </div>
+    
+    
+    <div class="container">
+        <button onclick="pause()" class="icons"><i class="fa fa-pause fa-3x" aria-hidden="true"></i></button>
+        <button onclick="play()" class="icons"><i class="fa fa-play fa-3x" aria-hidden="true"></i></button>
+        <button onclick="stop()" class="icons"><i class="fa fa-stop fa-3x"></i></button>
+        <button onclick="lap()" class="icons"><i class="fa fa-flag-checkered fa-3x"></i></button>
+        <a href="/index.html" class="icons"><i class="fa fa-retweet fa-3x" aria-hidden="true"></i></a>
+    </div>
+    <div id="new">
+
+    </div>
+
+
+
+</body>
+<script src="index.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+
+</html>
